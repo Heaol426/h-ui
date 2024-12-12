@@ -24,4 +24,5 @@ type ProxyGroup struct {
 type ClashConfig struct {
 	Proxies     []interface{} `yaml:"proxies"`
 	ProxyGroups []ProxyGroup  `yaml:"proxy-groups"`
+	Rules       []string      `yaml:"rules"`
 }

@@ -181,7 +181,8 @@ func Hysteria2Subscribe(c *gin.Context) {
 	}
 
 	if clientType == constant.Shadowrocket || clientType == constant.Clash {
-		c.Header("content-disposition", "attachment; filename=hui.yaml")
+		c.Header("content-disposition", "attachment; filename=SKYLARK")
+		//c.Header("content-disposition", "attachment; filename=DuanKun")
 		c.Header("profile-update-interval", "12")
 		c.Header("subscription-userinfo", userInfo)
 	}
